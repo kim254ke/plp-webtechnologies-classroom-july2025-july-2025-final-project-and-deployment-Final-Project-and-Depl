@@ -1,13 +1,3 @@
-/* ============================================================
-   African Wildlife Adventures
-   Author: Tonny
-   Stylesheet: styles.css
-   Purpose: Shared CSS for all pages (responsive + animations)
-   ============================================================ */
-
-/* ------------------------------
-   RESET & BASE STYLES
----------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -208,9 +198,19 @@
     text-align: center; font-size: 1.6rem;
     margin-bottom: 1rem; color: #0f1724;
   }
-  .features, .gallery-grid, .testimonial-grid {
+  .gallery-grid, .testimonial-grid {
     display: grid; gap: 1.2rem;
     grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  }
+
+  .features {
+    display: grid
+;
+    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
   }
   .feature-card {
     background: #fff; border-radius: 12px;
