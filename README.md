@@ -6,7 +6,7 @@ Built as a final project to demonstrate **HTML5, CSS3, and JavaScript** skills w
 ---
 
 ##  Live Website  
- [[View African Wildlife Adventures](https://plp-webtechnologies-classroom-july2-khaki.vercel.app/index.html)](LIVE-LINK-HERE)  
+ [[View African Wildlife Adventures](https://plp-webtechnologies-classroom-july2-khaki.vercel.app/contact.html)](LIVE-LINK-HERE)  
 
 ---
 
