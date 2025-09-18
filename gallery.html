@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — African Wildlife Adventures</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <a class="logo" href="index.html">African Wildlife</a>
+    <button id="mobileMenuBtn" class="mobile-menu" aria-label="Toggle menu">☰</button>
+    <nav class="navlinks" id="navLinks">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="safaris.html">Safaris</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero" style="background-image:url('images/gallery-hero.jpg')">
+    <div class="overlay container">
+      <h1>Wildlife Gallery</h1>
+      <p>A glimpse of Africa’s most breathtaking moments</p>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <main class="gallery container">
+    <h2 class="section-title">Our Adventures</h2>
+    <div class="gallery-grid">
+      <img src="images/zebras.jpg" alt="Zebras" class="fade-in" />
+      <img src="images/lion.jpg" alt="Lion" class="fade-in" />
+      <img src="images/giraffe.jpg" alt="Giraffe" class="fade-in" />
+      <img src="images/bear fight.jpg" alt="bear fight" class="fade-in" />
+      <img src="images/monkeys.jpg" alt="Monkeys" class="fade-in" />
+      <img src="images/buffalo.jpg" alt="buffalo" class="fade-in" />
+      <img src="images/baboon.jpg" alt="baboon" class="fade-in" />
+      <img src="images/antelope.jpg" alt="antelope" class="fade-in" />
+    </div>
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="closeLightbox">✕</button>
+    <button class="lightbox-nav prev" id="prevImg">‹</button>
+    <img id="lightboxImg" src="" alt="Enlarged wildlife" />
+    <button class="lightbox-nav next" id="nextImg">›</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2025 African Wildlife Adventures | Designed by Tonny</p>
+      <div class="socials">
+        <a href="#"><img src="icons/instagram-167-svgrepo-com.svg" alt="Instagram"></a>
+        <a href="#"><img src="icons/facebook-svgrepo-com.svg" alt="Facebook"></a>
+        <a href="#"><img src="icons/youtube-svgrepo-com.svg" alt="YouTube"></a>
+      </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

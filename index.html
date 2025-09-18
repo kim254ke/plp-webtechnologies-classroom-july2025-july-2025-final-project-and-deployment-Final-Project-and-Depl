@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>African Wildlife Adventures — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <a class="logo" href="index.html"> African Wildlife</a>
+    <button id="mobileMenuBtn" class="mobile-menu" aria-label="Toggle menu">☰</button>
+    <nav class="navlinks" id="navLinks">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="safaris.html">Safaris</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO: Carousel -->
+  <section class="hero-carousel">
+    <div class="carousel-wrapper">
+      <div class="slide" data-index="0">
+        <img src="images/zebras.jpg" alt="Zebras on the plains">
+        <div class="hero-caption">
+          <h1>Experience the Wild</h1>
+          <p>Discover Africa’s breathtaking landscapes and majestic wildlife.</p>
+          <div class="hero-actions">
+            <a href="safaris.html" class="btn">Book a Safari</a>
+            <button class="btn outline" id="openVideo">▶ Watch Video</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-index="1">
+        <img src="images/lion.jpg" alt="Lion pride">
+        <div class="hero-caption">
+          <h1>Meet the Big Cats</h1>
+          <p>Guided safaris that bring you close to lions, leopards and cheetahs.</p>
+          <a href="gallery.html" class="btn">View Gallery</a>
+        </div>
+      </div>
+
+      <div class="slide" data-index="2">
+        <img src="images/antelope.jpg" alt="antelope">
+        <div class="hero-caption">
+          <h1>Graceful Giants</h1>
+          <p>Photographic safaris to capture giraffes, elephants and more.</p>
+          <a href="about.html" class="btn">Learn More</a>
+        </div>
+      </div>
+
+      <button class="carousel-nav prev" aria-label="Previous slide">‹</button>
+      <button class="carousel-nav next" aria-label="Next slide">›</button>
+      <div class="dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features container">
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="features-grid">
+      <article class="feature-card fade-in">
+        <img src="images/lounges.jpg" alt="tourism">
+        <h3>Expert Guides</h3>
+        <p>Local guides with deep knowledge of wildlife and photography tips.</p>
+      </article>
+    
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials container">
+    <h2 class="section-title">Visitors Love Us</h2>
+    <div class="testimonial-grid">
+      <blockquote class="testimonial fade-in">“An unforgettable experience — the guides made it magical.” <footer>- Sarah</footer></blockquote>
+      <blockquote class="testimonial fade-in">“Great value, excellent sightings and friendly staff.” <footer>- James</footer></blockquote>
+      <blockquote class="testimonial fade-in">“Professional, punctual and pure beauty.” <footer>- Amina</footer></blockquote>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-inner container">
+      <h2>Ready for your adventure?</h2>
+      <p>Book today for special seasonal offers and guided packages.</p>
+      <a href="safaris.html" class="btn large">Start Your Journey</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2025 African Wildlife Adventures | Designed by Tonny</p>
+      <div class="socials">
+        <a href="#"><img src="icons/instagram-167-svgrepo-com.svg" alt="Instagram"></a>
+        <a href="#"><img src="icons/facebook-svgrepo-com.svg" alt="Facebook"></a>
+        <a href="#"><img src="icons/youtube-svgrepo-com.svg" alt="YouTube"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VIDEO MODAL -->
+  <div id="videoModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeVideo" aria-label="Close video">✕</button>
+      <video id="heroVideo" controls playsinline>
+        <source src="video/hero-safari.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

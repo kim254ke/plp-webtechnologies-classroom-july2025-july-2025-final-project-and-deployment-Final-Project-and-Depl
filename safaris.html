@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Safaris — African Wildlife Adventures</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <a class="logo" href="index.html">African Wildlife</a>
+    <button id="mobileMenuBtn" class="mobile-menu" aria-label="Toggle menu">☰</button>
+    <nav class="navlinks" id="navLinks">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="safaris.html" class="active">Safaris</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero" style="background-image:url('images/safari-hero.jpg')">
+    <div class="overlay container">
+      <h1>Safari Packages</h1>
+      <p>Choose your adventure and explore Africa’s wild beauty.</p>
+    </div>
+  </section>
+
+  <!-- SAFARI CARDS -->
+  <section class="safaris container">
+    <div class="safari-cards">
+      <div class="card fade-in">
+        <img src="images/lion.jpg" alt="Lion safari" />
+        <h3>3-Day Maasai Mara Adventure</h3>
+        <p>See lions, elephants, and breathtaking savanna landscapes.</p>
+        <p><b>Price:</b> Ksh 500</p>
+        <a href="#bookingForm" class="btn">Book Now</a>
+      </div>
+      <div class="card fade-in">
+        <img src="images/wild beest.jpg" alt="wildlife" />
+        <h3>5-Day Serengeti Safari</h3>
+        <p>Experience the Great Migration and luxury safari camps.</p>
+        <p><b>Price:</b> Ksh 1,200</p>
+        <a href="#bookingForm" class="btn">Book Now</a>
+      </div>
+      <div class="card fade-in">
+        <img src="images/lounges.jpg" alt="lounges" />
+        <h3>Luxury Safari Tour</h3>
+        <p>Private guide, luxury lodges, and personalized experiences.</p>
+        <p><b>Price:</b> Ksh 2,500</p>
+        <a href="#bookingForm" class="btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="booking container">
+    <h2>Book Your Safari</h2>
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="package">Choose Package:</label>
+      <select id="package" required>
+        <option value="">Select</option>
+        <option value="Maasai Mara">3-Day Maasai Mara</option>
+        <option value="Serengeti">5-Day Serengeti</option>
+        <option value="Luxury">Luxury Safari</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" required />
+
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2025 African Wildlife Adventures | Designed by Tonny</p>
+      <div class="socials">
+        <a href="#"><img src="icons/instagram-167-svgrepo-com.svg" alt="Instagram"></a>
+        <a href="#"><img src="icons/facebook-svgrepo-com.svg" alt="Facebook"></a>
+        <a href="#"><img src="icons/youtube-svgrepo-com.svg" alt="YouTube"></a>
+      </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
